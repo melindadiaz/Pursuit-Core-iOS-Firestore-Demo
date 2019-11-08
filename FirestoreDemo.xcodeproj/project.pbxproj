@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD261C3D2375DBF700E08B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD261C3C2375DBF700E08B04 /* AppDelegate.swift */; };
+		CD261C3F2375DBF700E08B04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD261C3E2375DBF700E08B04 /* SceneDelegate.swift */; };
+		CD261C412375DBF700E08B04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD261C402375DBF700E08B04 /* ViewController.swift */; };
+		CD261C442375DBF700E08B04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD261C422375DBF700E08B04 /* Main.storyboard */; };
+		CD261C462375DBFC00E08B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD261C452375DBFC00E08B04 /* Assets.xcassets */; };
+		CD261C492375DBFC00E08B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD261C472375DBFC00E08B04 /* LaunchScreen.storyboard */; };
+		CD261C542375DBFD00E08B04 /* FirestoreDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD261C532375DBFD00E08B04 /* FirestoreDemoTests.swift */; };
+		CD261C5F2375DCFD00E08B04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD261C5E2375DCFD00E08B04 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD261C502375DBFD00E08B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD261C312375DBF600E08B04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD261C382375DBF700E08B04;
+			remoteInfo = FirestoreDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD261C392375DBF700E08B04 /* FirestoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirestoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD261C3C2375DBF700E08B04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD261C3E2375DBF700E08B04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD261C402375DBF700E08B04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD261C432375DBF700E08B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD261C452375DBFC00E08B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD261C482375DBFC00E08B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD261C4A2375DBFC00E08B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD261C4F2375DBFD00E08B04 /* FirestoreDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirestoreDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD261C532375DBFD00E08B04 /* FirestoreDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDemoTests.swift; sourceTree = "<group>"; };
+		CD261C552375DBFD00E08B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD261C5E2375DCFD00E08B04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD261C362375DBF700E08B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD261C4C2375DBFD00E08B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD261C302375DBF600E08B04 = {
+			isa = PBXGroup;
+			children = (
+				CD261C3B2375DBF700E08B04 /* FirestoreDemo */,
+				CD261C522375DBFD00E08B04 /* FirestoreDemoTests */,
+				CD261C3A2375DBF700E08B04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD261C3A2375DBF700E08B04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD261C392375DBF700E08B04 /* FirestoreDemo.app */,
+				CD261C4F2375DBFD00E08B04 /* FirestoreDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD261C3B2375DBF700E08B04 /* FirestoreDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CD261C3C2375DBF700E08B04 /* AppDelegate.swift */,
+				CD261C3E2375DBF700E08B04 /* SceneDelegate.swift */,
+				CD261C402375DBF700E08B04 /* ViewController.swift */,
+				CD261C422375DBF700E08B04 /* Main.storyboard */,
+				CD261C452375DBFC00E08B04 /* Assets.xcassets */,
+				CD261C472375DBFC00E08B04 /* LaunchScreen.storyboard */,
+				CD261C4A2375DBFC00E08B04 /* Info.plist */,
+				CD261C5E2375DCFD00E08B04 /* GoogleService-Info.plist */,
+			);
+			path = FirestoreDemo;
+			sourceTree = "<group>";
+		};
+		CD261C522375DBFD00E08B04 /* FirestoreDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD261C532375DBFD00E08B04 /* FirestoreDemoTests.swift */,
+				CD261C552375DBFD00E08B04 /* Info.plist */,
+			);
+			path = FirestoreDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD261C382375DBF700E08B04 /* FirestoreDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD261C582375DBFD00E08B04 /* Build configuration list for PBXNativeTarget "FirestoreDemo" */;
+			buildPhases = (
+				CD261C352375DBF700E08B04 /* Sources */,
+				CD261C362375DBF700E08B04 /* Frameworks */,
+				CD261C372375DBF700E08B04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirestoreDemo;
+			productName = FirestoreDemo;
+			productReference = CD261C392375DBF700E08B04 /* FirestoreDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD261C4E2375DBFD00E08B04 /* FirestoreDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD261C5B2375DBFD00E08B04 /* Build configuration list for PBXNativeTarget "FirestoreDemoTests" */;
+			buildPhases = (
+				CD261C4B2375DBFD00E08B04 /* Sources */,
+				CD261C4C2375DBFD00E08B04 /* Frameworks */,
+				CD261C4D2375DBFD00E08B04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD261C512375DBFD00E08B04 /* PBXTargetDependency */,
+			);
+			name = FirestoreDemoTests;
+			productName = FirestoreDemoTests;
+			productReference = CD261C4F2375DBFD00E08B04 /* FirestoreDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD261C312375DBF600E08B04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Benjamin Stone";
+				TargetAttributes = {
+					CD261C382375DBF700E08B04 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					CD261C4E2375DBFD00E08B04 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = CD261C382375DBF700E08B04;
+					};
+				};
+			};
+			buildConfigurationList = CD261C342375DBF700E08B04 /* Build configuration list for PBXProject "FirestoreDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD261C302375DBF600E08B04;
+			productRefGroup = CD261C3A2375DBF700E08B04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD261C382375DBF700E08B04 /* FirestoreDemo */,
+				CD261C4E2375DBFD00E08B04 /* FirestoreDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD261C372375DBF700E08B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD261C492375DBFC00E08B04 /* LaunchScreen.storyboard in Resources */,
+				CD261C5F2375DCFD00E08B04 /* GoogleService-Info.plist in Resources */,
+				CD261C462375DBFC00E08B04 /* Assets.xcassets in Resources */,
+				CD261C442375DBF700E08B04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD261C4D2375DBFD00E08B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD261C352375DBF700E08B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD261C412375DBF700E08B04 /* ViewController.swift in Sources */,
+				CD261C3D2375DBF700E08B04 /* AppDelegate.swift in Sources */,
+				CD261C3F2375DBF700E08B04 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD261C4B2375DBFD00E08B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD261C542375DBFD00E08B04 /* FirestoreDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD261C512375DBFD00E08B04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD261C382375DBF700E08B04 /* FirestoreDemo */;
+			targetProxy = CD261C502375DBFD00E08B04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD261C422375DBF700E08B04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD261C432375DBF700E08B04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD261C472375DBFC00E08B04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD261C482375DBFC00E08B04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD261C562375DBFD00E08B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD261C572375DBFD00E08B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD261C592375DBFD00E08B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = FirestoreDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.FirestoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD261C5A2375DBFD00E08B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = FirestoreDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.FirestoreDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD261C5C2375DBFD00E08B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = FirestoreDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.FirestoreDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirestoreDemo.app/FirestoreDemo";
+			};
+			name = Debug;
+		};
+		CD261C5D2375DBFD00E08B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = FirestoreDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.FirestoreDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirestoreDemo.app/FirestoreDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD261C342375DBF700E08B04 /* Build configuration list for PBXProject "FirestoreDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD261C562375DBFD00E08B04 /* Debug */,
+				CD261C572375DBFD00E08B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD261C582375DBFD00E08B04 /* Build configuration list for PBXNativeTarget "FirestoreDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD261C592375DBFD00E08B04 /* Debug */,
+				CD261C5A2375DBFD00E08B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD261C5B2375DBFD00E08B04 /* Build configuration list for PBXNativeTarget "FirestoreDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD261C5C2375DBFD00E08B04 /* Debug */,
+				CD261C5D2375DBFD00E08B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD261C312375DBF600E08B04 /* Project object */;
+}
