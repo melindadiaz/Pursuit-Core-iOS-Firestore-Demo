@@ -7,6 +7,9 @@ target 'FirestoreDemo' do
 
   # Pods for FirestoreDemo
 
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+
   target 'FirestoreDemoTests' do
     inherit! :search_paths
     # Pods for testing
