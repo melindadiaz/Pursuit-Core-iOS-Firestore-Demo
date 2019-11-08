@@ -32,9 +32,7 @@ class PostsViewController: UIViewController {
     
     private func loadPosts() {
         FirestoreService.manager.getPosts { [weak self] (result) in
-            DispatchQueue.main.async {
-                self?.handleFetchPostsResponse(withResult: result)
-            }
+            self?.handleFetchPostsResponse(withResult: result)
         }
     }
     

@@ -22,6 +22,16 @@ class FirestoreService {
         }
     }
     
+    func create(_ user: PersistedUser, onCompletion: @escaping (Result<Void, Error>) -> Void) {
+        db.collection("users").document(user.uid).setData(user.fieldsDict) { err in
+            if let err = err {
+                onCompletion(.failure(err))
+            } else {
+                onCompletion(.success(()))
+            }
+        }
+    }
+    
     func create(_ post: Post, onCompletion: @escaping (Result<Void, Error>) -> Void) {
         db.collection("posts").document(post.uuidStr).setData(post.fieldsDict) { err in
             if let err = err {

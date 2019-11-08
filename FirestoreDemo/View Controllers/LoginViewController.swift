@@ -29,22 +29,14 @@ class LogInViewController: UIViewController {
         }
         FirebaseAuthService.manager.loginUser(withEmail: validCredentials.email,
                                               andPassword: validCredentials.password,
-                                              onCompletion: { [weak self] (result) in
-                                                DispatchQueue.main.async {
-                                                    self?.handleLogInResponse(withResult: result)
-                                                }
-        })
+                                              onCompletion: { [weak self] (result) in self?.handleLogInResponse(withResult: result) })
     }
     
     @IBAction func createNewUserAccount(_ sender: Any) {
         guard let validCredentials = validUserCredentials else { return }
         FirebaseAuthService.manager.createNewUser(withEmail: validCredentials.email,
                                                   andPassword: validCredentials.password,
-                                                  onCompletion: { [weak self] (result) in
-                                                    DispatchQueue.main.async {
-                                                        self?.handleCreateUserResponse(withResult: result)
-                                                    }
-        })
+                                                  onCompletion: { [weak self] (result) in self?.handleCreateUserResponse(withResult: result) })
     }
     
     // MARK: -Private methods
@@ -61,11 +53,22 @@ class LogInViewController: UIViewController {
     
     private func handleCreateUserResponse(withResult result: Result<User, Error>) {
         switch result {
-        case .success:
-            performSegue(withIdentifier: "loginSegue", sender: nil)
+        case let .success(user):
+            FirestoreService.manager.create(PersistedUser(from: user)) { [weak self] result in
+                self?.handleCreateUserInDatabaseResponse(withResult: result)
+            }
         case let .failure(error):
             presentGenericAlert(withTitle: "Create user failure",
                                 andMessage: "An error occurred while creating an account: \(error)")
+        }
+    }
+    
+    private func handleCreateUserInDatabaseResponse(withResult result: Result<Void, Error>) {
+        switch result {
+        case .success:
+            performSegue(withIdentifier: "loginSegue", sender: nil)
+        case let .failure(error):
+            print("An error occurred peristing the user to Firestore: \(error)")
         }
     }
     

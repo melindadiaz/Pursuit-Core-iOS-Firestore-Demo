@@ -21,9 +21,7 @@ class CreateNewPostViewController: UIViewController {
         let newPost = Post(title: title, body: body, userUID: user.uid)
         
         FirestoreService.manager.create(newPost) { [weak self] (result) in
-            DispatchQueue.main.async {
-                self?.handlePostResponse(withResult: result)
-            }
+            self?.handlePostResponse(withResult: result)
         }
     }
     
