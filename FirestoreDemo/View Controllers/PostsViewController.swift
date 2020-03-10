@@ -8,6 +8,15 @@ class PostsViewController: UIViewController {
     
     // MARK: -Internal Properties
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     var posts = [Post]() {
         didSet {
             postsTableView.reloadData()
